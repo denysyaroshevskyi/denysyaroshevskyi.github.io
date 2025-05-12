@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import type { ResumeItem } from "../types/config";
+
+type Props = ResumeItem;
+
+const { title, company, date, description } = Astro.props;
+---
+
+<a
+    href={company.url}
+    class="py-3 flex items-start justify-between gap-4 group-hover:opacity-60 hover:!opacity-100 transition-opacity"
+>
+  <div class="flex items-center gap-4 flex-1">
+    <Image
+        src={company.image}
+        alt={company.name}
+        width={40}
+        height={40}
+        class="rounded-full w-[40px] h-[40px] object-cover"
+    />
+    <div>
+      <h3 class="font-medium">{title}</h3>
+      <p class="text-sm opacity-70">{company.name}</p>
+      {description && <p class="text-sm opacity-40">{description}</p>}
+    </div>
+  </div>
+  <div class="min-w-[100px] text-right">
+    <p class="text-sm opacity-60">{date}</p>
+  </div>
+</a>
