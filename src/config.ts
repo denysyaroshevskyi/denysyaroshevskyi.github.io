@@ -80,7 +80,7 @@ export const aboutPageContent: AboutPageContent = {
     description: `
 My organizational skills, effective communication, and a strong sense of responsibility are key to crafting robust code and dependable software programs. I have experience managing projects, leading teams, and building relationships with stakeholders. I am passionate about programming and focused on improving my skills.
 <br/><br/>
-Good experience in improving performance with blackfire, payment systems, developing and improving B2B features. During a business trip, collaborated closely with key stakeholders to accelerate project timelines and resolve critical issues promptly. Conducted meetings with clients to gather requirements, understand pain points, and align project objectives with business goals. Familiar with Domain-Driven Design (DDD), CQRS, and microservice architecture principles.
+Extensive experience in performance optimization using Blackfire, integrating payment systems, and enhancing B2B features. During a business trip, collaborated closely with key stakeholders to accelerate project timelines and resolve critical issues promptly. Conducted meetings with clients to gather requirements, understand pain points, and align project objectives with business goals. Familiar with Domain-Driven Design (DDD), CQRS, and microservice architecture principles.
 <br/><br/>
   <p class="opacity-60 mb-10">Experienced: PHP, JavaScript, Magento 1/2, Adobe Commerce, Laravel, Lumen, Magento Cloud, Docker, Xdebug, Jenkins, Elasticsearch, Redis, Memcached, RabbitMQ, SQL, ACID, REST API, Clean Code, Performance Optimization, Scalability, GRASP, SOLID, Microservice Architecture</p>
   <p class="opacity-60 mb-10">Familiar: Microservices, Domain-Driven Design (DDD), CQRS, Event-Driven Architecture</p>
@@ -99,7 +99,7 @@ Good experience in improving performance with blackfire, payment systems, develo
     description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the companies I've worked with.`, // Markdown is supported
     items: [
       {
-        title: "Software Engeneer",
+        title: "Software Engineer",
         company: {
           name: "Scimus",
           image: "/img_6.png",
@@ -109,7 +109,7 @@ Good experience in improving performance with blackfire, payment systems, develo
         description: ""
       },
       {
-        title: "Software Engeneer",
+        title: "Software Engineer",
         company: {
           name: "BORN Group",
           image: "/img_5.png",
@@ -119,7 +119,7 @@ Good experience in improving performance with blackfire, payment systems, develo
         description: ""
       },
       {
-        title: "Software Engeneer",
+        title: "Software Engineer",
         company: {
           name: "Strix Group",
           image: "/img_4.png",
@@ -129,7 +129,7 @@ Good experience in improving performance with blackfire, payment systems, develo
         description: ""
       },
       {
-        title: "Software Engeneer",
+        title: "Software Engineer",
         company: {
           name: "Overdose Digital",
           image: "/img_3.png",
@@ -139,7 +139,7 @@ Good experience in improving performance with blackfire, payment systems, develo
         description: ""
       },
       {
-        title: "Software Engeneer",
+        title: "Software Engineer",
         company: {
           name: "Wise LLT",
           image: "/img_2.png",
@@ -149,7 +149,7 @@ Good experience in improving performance with blackfire, payment systems, develo
         description: ""
       },
       {
-        title: "Software Engeneer",
+        title: "Software Engineer",
         company: {
           name: "ITDelight",
           image: "/img_1.png",
