@@ -1,41 +1,41 @@
 ---
 import { Image } from "astro:assets";
 import type { Project } from "../types/config";
-import {marked} from "marked"
+import { marked } from "marked";
 
-type Props = Project & { index: number };
+type Props = Project & { isFirst?: boolean };
 
-const { title, description, image, year, url, index } = Astro.props;
-
-const htmlDescription = marked.parse(description)
-const isFirst = index === 0;
+const { title, description, image, year, url, isFirst = false } = Astro.props;
+const htmlDescription = marked.parse(description);
 ---
 
 <a
-  href={url}
-  target="_blank"
-  class="sm:py-5 py-10 flex flex-col sm:flex-row gap-6 group-hover:opacity-60 hover:!opacity-100 transition-opacity"
+    href={url}
+    target="_blank"
+    class="sm:py-5 py-10 flex flex-col sm:flex-row gap-6 group-hover:opacity-60 hover:!opacity-100 transition-opacity"
 >
   <div class="h-full bg-gray-700 rounded-lg aspect-video sm:h-[150px]">
-    isFirst ? (
-    <img
-        src={image.src}
-        alt={title}
-        width={1920}
-        height={1080}
-        loading="eager"
-        decoding="async"
-        class="w-full h-full object-cover rounded-lg aspect-video"
-    />
-    ) : (
-    <Image
-      width={1920}
-      height={1080}
-      src={image}
-      alt={title}
-      class="w-full h-full object-cover rounded-lg aspect-video"
-    />
-    )
+    {
+      isFirst ? (
+          <img
+              src={image}
+              alt={title}
+              width={1920}
+              height={1080}
+              loading="eager"
+              decoding="async"
+              class="w-full h-full object-cover rounded-lg aspect-video"
+          />
+      ) : (
+          <Image
+              src={image}
+              alt={title}
+              width={1920}
+              height={1080}
+              class="w-full h-full object-cover rounded-lg aspect-video"
+          />
+      )
+    }
   </div>
   <div>
     <div class="flex items-center gap-1 mb-2">
